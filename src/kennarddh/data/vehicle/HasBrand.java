@@ -1,5 +1,7 @@
 package kennarddh.data.vehicle;
 
 public interface HasBrand {
-    String getBrand();
+    default String getBrand() {
+        return "No brand";
+    }
 }
