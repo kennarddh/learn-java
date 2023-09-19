@@ -1,9 +1,9 @@
 package kennarddh.learn;
 
-import kennarddh.data.Category;
-import kennarddh.data.Product;
+import kennarddh.data.product.Category;
+import kennarddh.data.product.Product;
 
-public class Main {
+public class MainProduct {
     public static void main(String[] args) {
         Category foodsCategory = new Category("Foods");
         Category toolsCategory = new Category("Tools");

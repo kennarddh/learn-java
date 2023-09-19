@@ -1,4 +1,4 @@
-package kennarddh.data;
+package kennarddh.data.product;
 
 public class Category {
     String name;
