@@ -3,7 +3,15 @@ package kennarddh.data.product;
 public class Category {
     String name;
 
-    public Category(String name) {
+    public Category(String name) throws Exception {
+        setName(name);
+
+        this.name = name;
+    }
+
+    public void setName(String name) throws Exception {
+        if (name == null) throw new Exception("Product cannot have a null name");
+
         this.name = name;
     }
 

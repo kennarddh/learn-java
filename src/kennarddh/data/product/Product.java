@@ -1,14 +1,21 @@
 package kennarddh.data.product;
 
 public class Product {
-    public String name;
+    private String name;
     public int price;
     public Category category;
 
-    public Product(String name, int price, Category category) {
-        this.name = name;
+    public Product(String name, int price, Category category) throws Exception {
+        setName(name);
+
         this.price = price;
         this.category = category;
+    }
+
+    public void setName(String name) throws Exception {
+        if (name == null) throw new Exception("Product cannot have a null name");
+
+        this.name = name;
     }
 
     @Override

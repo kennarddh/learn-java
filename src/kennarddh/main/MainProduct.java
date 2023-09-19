@@ -5,13 +5,25 @@ import kennarddh.data.product.Product;
 
 public class MainProduct {
     public static void main(String[] args) {
-        Category foodsCategory = new Category("Foods");
-        Category toolsCategory = new Category("Tools");
+        Category foodsCategory, toolsCategory;
 
-        Product chicken = new Product("Chicken", 10, foodsCategory);
-        Product steak = new Product("Steak", 20, foodsCategory);
+        try {
+            foodsCategory = new Category("Foods");
+            toolsCategory = new Category("Tools");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-        Product hammer = new Product("Hammer", 15, toolsCategory);
+        Product chicken, steak, hammer;
+
+        try {
+            chicken = new Product("Chicken", 10, foodsCategory);
+            steak = new Product("Steak", 20, foodsCategory);
+
+            hammer = new Product("Hammer", 15, toolsCategory);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(chicken);
         System.out.println(steak);
@@ -19,12 +31,22 @@ public class MainProduct {
 
         System.out.println("Equals");
 
-        Category foodsCategory2 = new Category("Foods");
+        Category foodsCategory2;
+        try {
+            foodsCategory2 = new Category("Foods");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(foodsCategory.equals(foodsCategory2));
         System.out.println(foodsCategory.equals(toolsCategory));
 
-        Product steak2 = new Product("Steak", 20, foodsCategory);
+        Product steak2;
+        try {
+            steak2 = new Product("Steak", 20, foodsCategory);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(steak.equals(steak2));
         System.out.println(steak.equals(chicken));
