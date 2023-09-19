@@ -1,4 +1,4 @@
-package kennarddh.learn;
+package kennarddh.main;
 
 import kennarddh.data.animal.Animal;
 import kennarddh.data.animal.Cat;

@@ -1,4 +1,4 @@
-package kennarddh.learn;
+package kennarddh.main;
 
 import kennarddh.data.vehicle.Car;
 import kennarddh.data.vehicle.Motorcycle;

@@ -1,4 +1,4 @@
-package kennarddh.learn;
+package kennarddh.main;
 
 import kennarddh.data.product.Category;
 import kennarddh.data.product.Product;
