@@ -10,4 +10,9 @@ public class Car implements Vehicle {
     public int getTire() {
         return 4;
     }
+
+    @Override
+    public String getBrand() {
+        return "Car brand";
+    }
 }

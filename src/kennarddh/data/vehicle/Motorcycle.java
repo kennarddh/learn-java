@@ -10,4 +10,9 @@ public class Motorcycle implements Vehicle {
     public int getTire() {
         return 2;
     }
+
+    @Override
+    public String getBrand() {
+        return "Motorcycle brand";
+    }
 }

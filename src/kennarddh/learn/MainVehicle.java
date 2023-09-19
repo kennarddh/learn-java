@@ -9,6 +9,11 @@ public class MainVehicle {
         Car car = new Car();
 
         System.out.println(motorcycle);
+        System.out.println(motorcycle.getTire());
+        System.out.println(motorcycle.getBrand());
+
         System.out.println(car);
+        System.out.println(car.getTire());
+        System.out.println(car.getBrand());
     }
 }
