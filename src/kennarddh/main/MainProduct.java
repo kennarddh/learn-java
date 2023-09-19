@@ -16,5 +16,17 @@ public class MainProduct {
         System.out.println(chicken);
         System.out.println(steak);
         System.out.println(hammer);
+
+        System.out.println("Equals");
+
+        Category foodsCategory2 = new Category("Foods");
+
+        System.out.println(foodsCategory.equals(foodsCategory2));
+        System.out.println(foodsCategory.equals(toolsCategory));
+
+        Product steak2 = new Product("Steak", 20, foodsCategory);
+
+        System.out.println(steak.equals(steak2));
+        System.out.println(steak.equals(chicken));
     }
 }

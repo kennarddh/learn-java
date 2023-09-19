@@ -15,4 +15,24 @@ public class Product {
     public String toString() {
         return "Product:" + name + ", " + price + ", " + category;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Product product = (Product) o;
+
+        if (price != product.price) return false;
+        if (!name.equals(product.name)) return false;
+        return category.equals(product.category);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + price;
+        result = 31 * result + category.hashCode();
+        return result;
+    }
 }
