@@ -18,6 +18,10 @@ public class CompanyMain {
             throw new RuntimeException(e);
         }
 
+        System.out.println(company1Employee.getLevel().getDescription());
+        company1Employee.setLevel(Company.Employee.Level.Two);
+        System.out.println(company1Employee.getLevel().getDescription());
+
         System.out.println(company1.getName());
         System.out.println(company1Employee.getCompany().getName());
 
