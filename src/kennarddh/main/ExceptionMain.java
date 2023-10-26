@@ -10,8 +10,10 @@ class ExceptionMain {
     public static void main(String[] args) {
         try {
             throw new TestException("error message");
-        } catch (Throwable e) {
+        } catch (TestException e) {
             System.out.println("ERROR: " + e.getMessage());
+
+            e.printStackTrace();
         }
     }
 }
